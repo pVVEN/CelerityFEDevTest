@@ -198,6 +198,42 @@ b {
 		height: 60px;
 		display: inline-block;
 		float: right;
+
+		.btn-group
+		{
+			.dropdown-toggle
+			{
+				color: @c_purple;
+				border-color: @c_purple;
+				width: 128px;
+				font-family: 'OpenSans-SemiBold';
+
+				.caret
+				{
+					margin-left: 10px;
+				}
+			}
+
+			.dropdown-menu
+			{
+				left: inherit;
+				right: 0;
+				color: @c_purple;
+				border-color: @c_purple;
+
+				a {
+					color: @c_purple;
+				}
+			}
+		}
+
+		.btn-default
+		{
+			color: @c_purple;
+			border-color: @c_purple;
+			width: 128px;
+			font-family: 'OpenSans-SemiBold';
+		}
 	}
 
 	.subsection
