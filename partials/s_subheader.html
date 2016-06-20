@@ -1,0 +1,18 @@
+		<div class="subheader">
+			<div class="container">
+				<div class="subheader-left">
+					<!-- <a href="#">Button</a>
+					<a href="#">Button</a>
+					<a href="#">Button</a>
+					<a href="#">Button</a>
+					<a href="#">Button</a>
+					<a href="#">Button</a>
+					<a href="#">Button</a> -->
+					<a href="{{navs.url}}" class="subheader-button" ng-repeat="navs in navArray">{{navs.text}}</a>
+				</div>
+				<div class="subheader-right">
+					<a href="#"><span class="notification-count">{{notificationsA}}</span>Notifications</a>
+					<a href="#"><span class="notification-count">{{notificationsB}}</span>Notifications</a>
+				</div>
+			</div>
+		</div>

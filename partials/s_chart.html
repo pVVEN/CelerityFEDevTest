@@ -1,0 +1,65 @@
+			<div class="container section-container">
+				<div class="row section-row">
+					<div class="col-sm-12 col-md-12">
+						<div class="section-title-left">
+							{{s_chart.sectionTitle}}
+						</div>
+						<div class="section-title-right has-btn">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									{{s_chart.chartDDText}} <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li ng-repeat="link in s_chart.chartDDArray"><a href="{{link.url}}">{{link.text}}</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row section-row">
+					<div class="col-sm-4 col-md-4">
+						<hr>
+						<div class="subsection subsection-text">
+							<div class="content-title">
+								<h2>Title goes here. Right here.</h2>
+								<p><b>Section:</b> Title goes here | Date</p>
+							</div>
+							<div class="content-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperi</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<hr>
+						<div class="subsection subsection-chart">
+							<div class="chart-titles">
+								<div class="chart-title-left">
+									{{s_chart.chart.name}}
+									<span class="chart-percent"><span class="glyphicon glyphicon-triangle-top"></span> {{s_chart.chart.percent}}%</span>
+								</div>
+								<div class="chart-title-right">
+									<ul class="chart-legend">
+										<li class="yellowgreen">Year</li>
+										<li class="purple">Year</li>
+									</ul>
+								</div>
+							</div>
+							<!-- <div id="TheChart">{{renderChart()}}</div> -->
+							<!-- <highchart id="TheChart" config="highchartsNG"></highchart> -->
+							<customchart id="highchart"></customchart>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<hr>
+						<div class="subsection subsection-text">
+							<div class="content-title">
+								<h2>Title goes here. Right here.</h2>
+								<p><b>Section:</b> Title goes here | Date</p>
+							</div>
+							<div class="content-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperi</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>

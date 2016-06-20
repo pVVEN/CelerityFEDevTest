@@ -1,4 +1,5 @@
 $(function () {
+
     $('#highchart').highcharts({
         chart: {
             type: 'column'

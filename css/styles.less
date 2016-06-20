@@ -204,14 +204,20 @@ b {
 	{
 		display: inline-block;
 
-		a {
+		.subheader-button {
 			margin-right: 40px;
-
+			/*
 			display: none;
 
 			&:first-child
 			{
 				display: block;
+			}
+			*/
+			display: block;
+
+			&+.subheader-button {
+				display: none;
 			}
 		}
 	}
@@ -271,10 +277,17 @@ b {
 		display: inline-block;
 		width: 50%;
 
+		img
+		{
+			float: left;
+		}
+
 		p {
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
+			float: left;
+			width: 80%;
 		}
 	}
 
@@ -400,11 +413,15 @@ b {
 	{
 		//padding: 16px 20px;
 		padding: 0 20px;
-		height: 60px;
+		height: 110px;
 		//display: inline-block;
 		//float: right;
-		display: block;
-		height: 110px;
+		display: none;
+
+		&.has-btn
+		{
+			display: block;
+		}
 
 		.btn-group
 		{
@@ -525,6 +542,11 @@ b {
 		&.subsection-chart
 		{
 			.font-size(28);
+
+			.chart-titles
+			{
+				margin-bottom: 30px;
+			}
 
 			.chart-title-left
 			{
@@ -677,7 +699,7 @@ b {
 
 		.footer-col
 		{
-			width: 160px;
+			width: 100%;
 			//float: left;
 			padding: 20px 0;
 			//display: inline-block;
@@ -689,13 +711,14 @@ b {
 			a {
 				width: 100%;
 				color: @c_white;
-				//display: inline-block;
+				display: none;
 				margin: 10px 0;
 
 				&:first-child
 				{
 					font-family: 'OpenSans-SemiBold';
-					.font-size(16);
+					display: inline-block;
+					.font-size(26);
 				}
 			}
 		}
@@ -761,10 +784,11 @@ b {
 
 		.subheader-left
 		{
-			a {
+			.subheader-button
+			{
 				display: inline-block;
 
-				&:first-child
+				&+.subheader-button
 				{
 					display: inline-block;
 				}
@@ -797,6 +821,7 @@ b {
 				text-overflow: ellipsis;
 				white-space: normal;
 				overflow: visible;
+				width: auto;
 			}
 		}
 	}
@@ -1013,10 +1038,13 @@ b {
 
 			.footer-col
 			{
+				width: 160px;
 				display: inline-block;
 				*display: inline;
 
 				a {
+					display: inline-block;
+
 					&:first-child
 					{
 						.font-size(16);

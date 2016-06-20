@@ -1,0 +1,62 @@
+					<div class="container section-container">
+						<div class="row section-row">
+							<div class="col-sm-12 col-md-12">
+								<div class="section-title-left">
+									{{s_members.sectionTitle}}
+								</div>
+								<div class="section-title-right has-btn">
+									<a class="btn btn-default" href="{{s_members.btnURL}}">{{s_members.btnText}}</a>
+								</div>
+							</div>
+						</div>
+						<div class="row section-row">
+							<div class="col-sm-4 col-md-4" ng-repeat="member in s_members.memberArray">
+								<hr>
+								<div class="subsection subsection-profile">
+									<img ng-src="{{member.img}}" alt="{{member.name}}">
+									<p class="profile-name">{{member.name}}</p>
+									<p class="profile-title">{{member.title}}</p>
+									<div class="profile-icons">
+										<a class="btn btn-default" href="{{member.email}}" role="button"><img src="img/icon-mail.png" alt="Email"></a>
+										<a class="btn btn-default" href="{{member.phone}}" role="button"><img src="img/icon-phone.png" alt="Phone"></a>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-sm-4 col-md-4">
+								<hr>
+								<div class="subsection subsection-profile">
+									<img src="img/profileLarge.png" alt="Profile">
+									<p class="profile-name">Team Member Name</p>
+									<p class="profile-title">Job Title</p>
+									<div class="profile-icons">
+										<a class="btn btn-default" href="#" role="button"><img src="img/icon-mail.png" alt="Email"></a>
+										<a class="btn btn-default" href="#" role="button"><img src="img/icon-phone.png" alt="Phone"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<hr>
+								<div class="subsection subsection-profile">
+									<img src="img/profileLarge.png" alt="Profile">
+									<p class="profile-name">Team Member Name</p>
+									<p class="profile-title">Job Title</p>
+									<div class="profile-icons">
+										<a class="btn btn-default" href="#" role="button"><img src="img/icon-mail.png" alt="Email"></a>
+										<a class="btn btn-default" href="#" role="button"><img src="img/icon-phone.png" alt="Phone"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<hr>
+								<div class="subsection subsection-profile">
+									<img src="img/profileLarge.png" alt="Profile">
+									<p class="profile-name">Team Member Name</p>
+									<p class="profile-title">Job Title</p>
+									<div class="profile-icons">
+										<a class="btn btn-default" href="#" role="button"><img src="img/icon-mail.png" alt="Email"></a>
+										<a class="btn btn-default" href="#" role="button"><img src="img/icon-phone.png" alt="Phone"></a>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
