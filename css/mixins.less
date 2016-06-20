@@ -1,4 +1,13 @@
 /* from css-tricks.com */
+.font-size(@sizeValue) {
+	//@remValue: @sizeValue;
+	//@pxValue: (@sizeValue * 10);
+	@remValue: (@sizeValue/10);
+	@pxValue: @sizeValue;
+	font-size: ~"@{pxValue}px"; 
+	font-size: ~"@{remValue}rem";
+}
+
 .border-radius(@radius: 5px)
 {
 	-webkit-border-radius: @radius;
