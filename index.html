@@ -9,7 +9,7 @@
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body ng-controller="mainController">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="display: none;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavBar">
@@ -18,12 +18,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#/"><img src="img/logo.png" alt="Celerity"></a>
+					<!-- <a class="navbar-brand" href="#/"><img src="img/logo.png" alt="Celerity"></a> -->
 				</div>
 				
 				<div class="collapse navbar-collapse" id="NavBar">
 					<ul class="nav navbar-nav">
-						<form class="navbar-form navbar-left">
+						<!-- <form class="navbar-form navbar-left search">
 							<div class="input-group">
 								<input type="text" class="form-control" placeholder="Search">
 								<span class="input-group-btn">
@@ -35,15 +35,43 @@
 						</form>
 						<div class="nav navbar-nav navbar-right login-div">
 							<img class="login-img" src="img/profileSmall.png" alt="Profile">
-							<div style="float: right;">
-								<p>Customer Name</p>
+							<div class="login-text">
+								<p class="login-name">Customer Name</p>
 								<p><a href="#">Account Settings</a> | <a href="#">Logout</a></p>
 							</div>
-						</div>
+						</div> -->
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<div class="mainheader">
+			<div class="container">
+				<div class="row mainheader-row">
+					<div class="col-md-4 vcenter">
+						<a href="#/"><img src="img/logo.png" alt="Celerity"></a>
+					</div><!--
+				--><div class="col-md-4 vcenter">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">
+									<img src="img/icon-search.png" alt="Search">
+								</button>
+							</span>
+						</div>
+					</div><!--
+				--><div class="col-md-4 vcenter">
+						<div class="login-div">
+							<img class="login-img" src="img/profileSmall.png" alt="Profile">
+							<div class="login-text">
+								<p class="login-name">Customer Name</p>
+								<p><a href="#">Account Settings</a> | <a href="#">Logout</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="subheader">
 			<div class="container">
 				<div class="subheader-left">
@@ -56,8 +84,8 @@
 					<a href="#">Button</a>
 				</div>
 				<div class="subheader-right">
-					<a href="#"><span class="notification-count">13</span> Notifications</a>
-					<a href="#"><span class="notification-count">4</span> Notifications</a>
+					<a href="#"><span class="notification-count">13</span>Notifications</a>
+					<a href="#"><span class="notification-count">4</span>Notifications</a>
 				</div>
 			</div>
 		</div>
@@ -83,7 +111,7 @@
 
 		<div class="container">
 			<div class="container section-container">
-				<div class="row section-row">
+				<div class="row section-row has-shadow">
 					<div class="col-md-12">
 						<div class="section-title-left">
 							Section Title
@@ -94,6 +122,7 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="subsection subsection-img">
 							<!-- <img src="img/placeholder.png"> -->
+							&nbsp;
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6">
@@ -107,7 +136,7 @@
 								<p><b>Section:</b> Title goes here | Date</p>
 							</div>
 							<div class="content-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
 							</div>
 							<div class="content-learnmore">
 								<a href="#">Learn More</a>
@@ -150,7 +179,7 @@
 								<p><b>Section:</b> Title goes here | Date</p>
 							</div>
 							<div class="content-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperi</p>
 							</div>
 						</div>
 					</div>
@@ -180,7 +209,7 @@
 								<p><b>Section:</b> Title goes here | Date</p>
 							</div>
 							<div class="content-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperi</p>
 							</div>
 						</div>
 					</div>
@@ -204,7 +233,7 @@
 								<hr>
 								<div class="subsection subsection-blog">
 									<div class="content-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
 									</div>
 								</div>
 								<div class="subsection subsection-centerlink">
@@ -251,38 +280,39 @@
 		</div>
 		
 		<div id="footer">
-			<div class="container">
+			<div class="container footer-container">
 				<div class="footer-col">
 					<a href="#">Content Link</a>
+				</div><!--
+				--><div class="footer-col">
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a>
+				</div><!--
+				--><div class="footer-col">
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a>
+				</div><!--
+				--><div class="footer-col">
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a>
+				</div><!--
+				--><div class="footer-col">
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a>
+				</div><!--
+				--><div class="footer-col">
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a><br />
+					<a href="#">Content Link</a>
+				</div><!--
+				--><div class="footer-col">
+					<a href="#">Content Link</a>
 				</div>
-				<div class="footer-col">
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-				</div>
-				<div class="footer-col">
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-				</div>
-				<div class="footer-col">
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-				</div>
-				<div class="footer-col">
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-				</div>
-				<div class="footer-col">
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-					<a href="#">Content Link</a>
-				</div>
-				<div class="footer-col">
-					<a href="#">Content Link</a>
-				</div>
+				<span class="stretch"></span>
 			</div>
 			<hr>
 			<div class="container">

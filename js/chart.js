@@ -10,6 +10,9 @@ $(function () {
         title: {
             text: ''
         },
+        legend: {
+            enabled: false
+        }, 
         xAxis: {
             categories: [
                 'Nov',
@@ -25,9 +28,11 @@ $(function () {
         },
         yAxis: {
             min: 0,
+            max: 100, 
             title: {
                 text: ''
-            }
+            }, 
+            tickInterval: 20
         },
         plotOptions: {
         		line: {
@@ -40,10 +45,10 @@ $(function () {
         },
         series: [{
             name: 'Year',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5]
+            data: [49.9, 71.5, 96.4, 29.2, 44.0, 76.0, 35.6, 48.5]
         }, {
             name: 'Year',
-            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3]
+            data: [83.6, 78.8, 98.5, 93.4, 56.0, 84.5, 35.0, 74.3]
         }]
     });
 });

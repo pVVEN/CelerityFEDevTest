@@ -1,4 +1,5 @@
-.border-radius (@radius: 5px)
+/* from css-tricks.com */
+.border-radius(@radius: 5px)
 {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
@@ -9,8 +10,27 @@
 	background-clip:         padding-box;
 }
 
+.drop-shadow(@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25)
+{
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+/* modified from http://bricss.net/post/33158273857/box-shadow-vs-filter-drop-shadow */
+.filter-drop-shadow(@x: 0, @y: 1px, @blur: 1px, @alpha: 0.25)
+{
+	-webkit-filter: drop-shadow(@x @y @blur rgba(0,0,0,@alpha));
+	-moz-filter: drop-shadow(@x @y @blur rgba(0,0,0,@alpha));
+	-ms-filter: drop-shadow(@x @y @blur rgba(0,0,0,@alpha));
+	-o-filter: drop-shadow(@x @y @blur rgba(0,0,0,@alpha));
+	filter: drop-shadow(@x @y @blur rgba(0,0,0,@alpha));
+}
+
+/* custom */
 .border-top(@radius: 5px)
 {
 	border-top-left-radius: @radius;
 	border-top-right-radius: @radius;
 }
+
